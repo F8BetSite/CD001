@@ -1,0 +1,1420 @@
+@font-face {
+    font-family: "Roboto";
+    src: URL("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: URL("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: URL("../font/SFPRODISPLAYMEDIUM.OTF");
+}
+
+@font-face {
+    font-family: "SVN-Gilroy";
+    src: URL("../font/SVNGilroy.html\ Light.otf");
+}
+
+*,
+html {
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.dp-pc {
+    display: block;
+}
+
+.dp-sm {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-main {
+    background: rgba(2, 159, 220, 1);
+    background: linear-gradient(90deg, rgba(2, 159, 220, 1) 0%, rgba(2, 159, 220, 1) 0%, rgba(2, 159, 220, 1) 0%, rgba(2, 171, 228, 1) 19%, rgba(0, 212, 255, 1) 100%);
+    min-height: 98px;
+}
+
+.header-main .header-main--top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0px;
+    align-items: center;
+}
+
+.logo {
+    max-width: 155px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.btn-redirect {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn-redirect .wp-btn {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-login {
+    border-radius: 20px;
+    border: 1.845px solid #18A8E0;
+    background: linear-gradient(180deg, #FFF 0%, #D7F1FF 77.08%, #70CEFF 100%);
+    box-shadow: 0px 7.38182px 8.30455px 0px rgba(3, 87, 123, 0.25);
+    padding: 8px 32px;
+    color: #26A9E0;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+
+    background: #124da5da;
+    color: #fff;
+}
+
+.btn-regiter {
+    background: linear-gradient(to top, #0053e0, #9dc1ff);
+    border-radius: 20px;
+    border: 1.845px solid #18A8E0;
+    box-shadow: 0px 7.38182px 8.30455px 0px rgba(3, 87, 123, 0.25);
+    padding: 8px 40px;
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.btn-regiter:hover {
+    opacity: 0.8;
+    background-color: #fff;
+}
+
+.btn-redirect .link-icon {
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+    width: 300px;
+    font-size:8px;
+}
+
+.btn-redirect .link-icon img {
+    width: auto;
+}
+
+.btn-redirect .link-icon a {
+    color: #F8E64F;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-redirect .link-icon a:hover {
+    color: #fff;
+}
+
+.header-bottom {
+    background: #0053e0;
+}
+
+.header-bottom .menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    flex-direction: column;
+}
+
+ul>li:hover span {
+    color: #ff0 !important;
+}
+
+ul>li:hover i {
+    background-position: center bottom;
+}
+
+.menu-item a span {
+    color: #fff !important;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul>li>a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul>li i {
+    width: 30px;
+    height: 26px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* Menu run time */
+
+.menu_run-time {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.menu_run-time_bottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 32%;
+}
+
+.menu_run-time_bottom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 10px;
+}
+
+.menu_run-time_bottom a:hover span {
+    color: #ff0 !important;
+}
+
+.menu_run-time_bottom a:hover i {
+    -webkit-mask-position: center bottom;
+    background-color: #ff0;
+}
+
+.menu_run-time_bottom a span {
+    color: #0053e0 !important;
+    font-family: Roboto-bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu_run-time_bottom>a {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu_run-time_bottom i {
+    width: 30px;
+    height: 26px;
+    margin-bottom: 5px;
+    --tw-bg-opacity: 1;
+    background-color: #0053e0;
+    -webkit-mask-position: center top;
+    -webkit-mask-repeat: no-repeat
+}
+
+/* End Menu run time */
+.footer {
+    padding: 19px 0px 0px 0px;
+    position: relative;
+    z-index: 99;
+}
+
+/* Responsie */
+
+
+@media screen and (max-width: 1200px) {
+    .rp-pc {
+        padding: 0px 15px !important;
+    }
+
+    .menu-item a {
+        font-size: 18px;
+    }
+
+    .header-bottom .menu-list {
+        gap: 10px;
+    }
+
+    /* footer */
+    .footer-container {
+        margin-top: 50px;
+    }
+
+    .footer-info-top h3,
+    .footer-menu .title {
+        font-size: 20px;
+    }
+
+    .footer-info-top p {
+        font-size: 18px;
+    }
+
+    .fan-club img {
+        max-width: 50px;
+    }
+
+    .company-gt img {
+        max-width: 180px;
+    }
+
+    .footer-menu ul a {
+        font-size: 16px;
+    }
+
+    .footer-menu {
+        padding-bottom: 20px;
+    }
+
+    .info-paymend {
+        gap: 150px;
+    }
+
+    .info-paymend .slogin {
+        width: 45%;
+    }
+
+    .info-paymend .slogan .logo svg {
+        width: 70% !important;
+    }
+
+    .paymend-title {
+        font-size: 20px;
+    }
+
+    .paymend-menthod {
+        -moz-column-gap: 7px;
+        column-gap: 8%;
+        row-gap: 15px;
+    }
+
+    .license-info img {
+        width: 70%;
+        height: auto;
+    }
+
+    .company-gt .img-fan_club {
+        width: 90px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .redirect-page .item {
+        column-gap: 28px;
+    }
+
+    .info-paymend {
+        gap: 50px;
+    }
+
+    .footer-menu .w-\[30\%\] {
+        width: 45%;
+    }
+
+    .list-logo-footer img {
+        gap: 5px;
+    }
+
+    .list-logo-footer {
+        gap: 0px;
+        row-gap: 15px;
+    }
+
+    .menu-header-top {
+        gap: 0.5rem;
+    }
+
+    .background-banner {
+        min-height: 160px;
+    }
+
+    .background-banner .menu-option {
+        padding: 1px 20px;
+        bottom: -60px;
+    }
+
+    .menu-item a {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .menu_run-time_bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .background-banner-center {
+        min-height: 420px;
+    }
+
+    .footer-menu .gap-\[5\%\] {
+        gap: 2%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-main {
+        min-height: 70px;
+    }
+
+    .logo {
+        max-width: 220px;
+    }
+
+    .btn-login {
+        padding: 9px 28px;
+    }
+
+    .btn-regiter {
+        padding: 9px 37px;
+    }
+
+    .footer-menu ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-menu2 ul {
+        flex-wrap: unset;
+    }
+
+    .footer-menu ul li {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .footer .footer-column .title a {
+        font-size: 15px;
+    }
+
+    .footer .footer-content {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-main {
+        min-height: 55px;
+    }
+
+    .header-main .header-main--top {
+        padding: 10px 0px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .menu-list .menu-item {
+        padding: 5px 10px;
+    }
+
+    .menu-list .thumbail {
+        width: 24px;
+        gap: 12px;
+    }
+
+    .menu-list .thumbail img {
+        width: 24px;
+    }
+
+    .close-icon svg {
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+        margin-bottom: 1px;
+    }
+
+    .close-icon svg path {
+        color: #fff;
+    }
+
+    .menu-item a {
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 600;
+    }
+
+    .sidemenu-overlay.active {
+        background-color: rgba(0, 0, 0, .6);
+        box-shadow: inset 0 -24px 120px 2px rgba(0, 0, 0, .7);
+        height: 100%;
+        left: 0;
+        opacity: 1;
+        pointer-events: block;
+        position: fixed;
+        top: 0;
+        transition: .3s;
+        width: 100%;
+        z-index: -1;
+        display: block;
+    }
+
+    .header-bottom {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background: #26A9E0;
+        z-index: 99999 !important;
+        overflow-x: hidden;
+        display: none;
+    }
+
+    .header-bottom .menu-list {
+        flex-direction: column;
+    }
+
+    .header-bottom .wp-btn.dp-sm {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 15px;
+        gap: 10px;
+    }
+
+    .header-bottom .wp-btn .btn-login {
+        box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, .25);
+    }
+
+    .header-bottom .wp-btn .btn-regiter {
+        box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, .25);
+    }
+
+    .menu-mobile.dp-sm,
+    .link-redirect.dp-sm {
+        display: block;
+    }
+
+    .btn-redirect.dp-pc {
+        display: none;
+    }
+
+    .menu-mobile.dp-sm {
+        width: 24px;
+    }
+
+    .link-redirect.dp-sm {
+        display: block;
+        width: 22px;
+        height: 31px;
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-image: url('../images/icon-taiapp.svg');
+    }
+
+    .header-bottom .menu-list {
+        gap: 2px;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper-footer {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    z-index: 9;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-new {
+    background: unset;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-top: 0px;
+}
+
+.logo-okvip-footer {
+    padding: 40px 0;
+    background: #0053e0;
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: 65px;
+}
+
+.text-f8bet {
+    --tw-text-opacity: 1;
+    color: #0053e0;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: SF Pro Display;
+
+}
+
+.text-f8bet p,
+.text-f8bet p span {
+    --tw-text-opacity: 1;
+    color: #0053e0;
+}
+
+.text-f8bet p .readless_text,
+.text-f8bet p .readmore_text {
+    --tw-text-opacity: 1;
+    color: rgb(249 166 49/var(--tw-text-opacity));
+}
+
+.title_thongtin h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.footer_link div {
+    color: #666666;
+    margin-bottom: 16px;
+}
+
+.vip-club-gt {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 1.5rem;
+    justify-content: center;
+}
+
+.vip-club-gt .fan-club {
+    padding-right: 2.5rem;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.company-gt {
+    padding-left: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.company-gt .img-fan_club {
+    width: 115px;
+    padding-right: 32px;
+    border-right: 1px solid #ffffff;
+}
+
+.company-gt .img-okvip {
+    padding-left: 32px;
+    width: 304px;
+}
+
+.footer-info-top h3 {
+    --tw-text-opacity: 1;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer-info-top p {
+    --tw-text-opacity: 1;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer-menu {
+    padding-bottom: 30px;
+}
+
+.footer-menu .title {
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: #0053e0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 25px 0px 15px;
+}
+
+.footer-menu ul a {
+    display: inline-block;
+    --tw-text-opacity: 1;
+    color: #0053e0;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 5px 0px;
+}
+
+.footer-menu ul a:hover {
+    color: #D7000D;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    transition: 0.2s;
+}
+
+.logo-footer {
+    padding-bottom: 10px;
+}
+
+.logo-footer img {
+    width: 200px;
+    height: auto;
+}
+
+.links-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.links-list a {
+    color: #0053e0;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: calc(25% - 12px);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.links-list a:nth-child(2n) {
+    width: calc(25% - 12px);
+}
+
+.links-list a:nth-child(4n) {
+    width: calc(25% - 12px);
+    text-align: right;
+}
+
+.info-paymend {
+    gap: 222px;
+    display: flex;
+    padding: 0px 0px 20px;
+}
+
+.info-paymend .slogan {
+    width: 55%;
+}
+
+.info-paymend .logo {
+    padding-bottom: 14px;
+}
+
+.info-paymend .w-\[30\%\] {
+    width: 30%;
+}
+
+.paymend-title {
+    --tw-text-opacity: 1;
+    color: #0053e0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.paymend-menthod {
+    column-gap: 44px;
+    row-gap: 26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.license-info {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.license-info .flex {
+    justify-content: space-between;
+}
+
+.license-info img:hover {
+    opacity: 0.7;
+}
+
+.license-info .flex h3 {
+    color: #0053e0 !important;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.license-info ul li h3 {
+    margin-bottom: 15px;
+}
+
+.license-info .list-icon01 {
+    max-width: 226px;
+    width: 100%;
+}
+
+.license-info .list-icon02 {
+    max-width: 138px;
+    width: 100%;
+}
+
+.license-info .list-icon03 {
+    max-width: 234px;
+    width: 100%;
+}
+
+.license-info .list-icon04 {
+    max-width: 332px;
+    width: 100%;
+}
+
+.list-logo-footer .title {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: #0053e0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.list-logo-footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+.icon-tele {
+    z-index: 9999;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    animation: at-ripple-blue 1s linear infinite;
+}
+
+@keyframes at-ripple-blue {
+    0% {
+        box-shadow: 0 4px 10px rgba(111, 155, 180, 0.774),
+            0 0 0 0 rgba(72, 126, 161, 0.644), 0 0 0 5px rgba(42, 94, 161, 0.788),
+            0 0 0 10px rgba(47, 120, 153, 0.719);
+    }
+
+    100% {
+        box-shadow: 0 4px 10px rgba(91, 162, 209, 0.192),
+            0 0 0 5px rgba(80, 157, 219, 0.274), 0 0 0 10px hsla(202, 75%, 71%, 0.205),
+            0 0 0 20px rgba(107, 203, 241, 0.192);
+    }
+}
+
+.telephone {
+    position: fixed;
+    border: 0px;
+    right: 20px;
+    bottom: 136px;
+    background: #fff;
+    padding: 20px 9px 9px;
+    z-index: 99;
+    text-align: left;
+    display: inline-block;
+    width: 300px;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.handle-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #F11;
+    cursor: pointer;
+}
+
+.info-paymend .slogin {
+    width: 45%;
+}
+
+.info-paymend .paymend-menthod .dp-sp {
+    display: none !important;
+}
+
+.high-text {
+    background: var(--brand, linear-gradient(45deg, #FF3849 0%, #FF9D00 100%));
+    background-clip: text;
+    color: red;
+}
+
+#text_more {
+    display: none;
+}
+
+
+/* Responsie */
+@media screen and (max-width: 1270px) {
+    .pd-rp {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* footer */
+    .footer-container {
+        margin-top: 50px;
+    }
+
+    .footer-info-top h3,
+    .footer-menu .title {
+        font-size: 20px;
+    }
+
+    .footer-info-top p {
+        font-size: 18px;
+    }
+
+    .fan-club img {
+        max-width: 50px;
+    }
+
+    .company-gt img {
+        max-width: 180px;
+    }
+
+    .footer-menu ul a {
+        font-size: 16px;
+    }
+
+    .footer-menu {
+        padding-bottom: 20px;
+    }
+
+    .info-paymend {
+        gap: 150px;
+    }
+
+    .info-paymend .slogin {
+        width: 45%;
+    }
+
+    .info-paymend .slogan .logo svg {
+        width: 70% !important;
+    }
+
+    .paymend-title {
+        font-size: 20px;
+    }
+
+    .paymend-menthod {
+        -moz-column-gap: 7px;
+        column-gap: 8%;
+        row-gap: 15px;
+    }
+
+    .license-info img {
+        width: 70%;
+        height: auto;
+    }
+
+    .footer {
+        margin-top: -50px;
+    }
+
+    .company-gt .img-fan_club {
+        width: 90px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .info-paymend {
+        gap: 50px;
+    }
+
+    .footer-menu .w-\[30\%\] {
+        width: 45%;
+    }
+
+    .list-logo-footer img {
+        gap: 5px;
+    }
+
+    .list-logo-footer {
+        gap: 0px;
+        row-gap: 15px;
+    }
+
+    .menu-header-top {
+        gap: 0.5rem;
+    }
+
+    .background-banner {
+        min-height: 160px;
+    }
+
+    .background-banner .menu-option {
+        padding: 1px 20px;
+        bottom: -60px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .background-banner-center {
+        min-height: 420px;
+    }
+
+    .footer-menu .gap-\[5\%\] {
+        gap: 2%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer-menu ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-menu2 ul {
+        flex-wrap: unset;
+    }
+
+    .footer-menu ul li {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dp-sm {
+        display: block;
+    }
+
+    .dp-pc,
+    .flex-icon01 .dp-pc {
+        display: none;
+    }
+
+    .dp-sp,
+    .flex-icon01 .dp-sp {
+        display: block;
+    }
+
+    .logo img {
+        max-width: 132px;
+        width: 100%;
+        height: 44px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .footer-menu {
+        padding-bottom: 0px;
+        display: block;
+    }
+
+    .info-paymend {
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+    .info-paymend .slogan {
+        display: none;
+    }
+
+    .paymend-menthod {
+        column-gap: 2%;
+    }
+
+    .info-paymend .w-\[55\%\],
+    .info-paymend .w-\[30\%\] {
+        width: 100%;
+    }
+
+    .paymend-menthod a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .license-info {
+        padding-bottom: 20px;
+    }
+
+    .license-info ul li {
+        width: 45% !important;
+        max-width: unset !important;
+        padding-bottom: 10px;
+    }
+
+    .footer-menu2 ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-menu2 ul li .flex-icon01 {
+        justify-content: flex-start;
+    }
+
+    .license-info .list-icon02 .flex-icon01 {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+    }
+
+    .license-info .list-icon03 .flex-icon01,
+    .license-info .list-icon04 .flex-icon01 {
+        flex-wrap: unset;
+    }
+
+    .license-info .flex h3 {
+        font-size: 14px;
+    }
+
+    .fan-club {
+        gap: 5px;
+    }
+
+    .footer-info-top h3,
+    .footer-info-top p {
+        font-size: 16px;
+    }
+
+    .vip-club-gt .fan-club {
+        padding-right: 5px;
+    }
+
+    .company-gt {
+        padding-left: 5px;
+    }
+
+    .vip-club-gt {
+        padding-right: 0px;
+        padding-left: 5px;
+        gap: 30px;
+    }
+
+    .company-gt img {
+        max-width: 130px;
+    }
+
+    .company-gt .img-okvip {
+        padding-left: 15px;
+    }
+
+    .company-gt .img-fan_club {
+        width: 65px;
+        padding-right: 15px;
+    }
+
+    .text-789bet {
+        font-size: 16px;
+    }
+
+    .list-logo-footer {
+        display: none;
+    }
+
+    .list-logo-footer img {
+        max-width: 40px;
+        width: 100%;
+    }
+
+    .license-info .list-icon01 h3,
+    .license-info .list-icon02 h3,
+    .license-info .list-icon03 h3,
+    .license-info .list-icon04 h3 {
+        --tw-text-opacity: 1;
+        color: #0053e0;
+    }
+
+    .license-info img {
+        width: 70%;
+        height: auto;
+    }
+
+    .list-icon01 img {
+        width: 90%;
+    }
+
+    .modal__content {
+        z-index: 99;
+        margin: auto;
+        position: fixed;
+        top: 0%;
+        left: 52%;
+        transform: translate(-50%, 22%);
+    }
+
+    .footer {
+        margin-top: -54px;
+    }
+
+    .menu-footer__first {
+        display: none;
+    }
+
+    .info-paymend .slogan,
+    .info-paymend .paymend-menthod .dp-pc {
+        display: none !important;
+    }
+
+    .info-paymend .paymend-menthod .dp-sp {
+        display: block !important;
+    }
+
+    .paymend-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 20px 0px 15px 0px;
+        --tw-text-opacity: 1;
+        color: #0053e0;
+    }
+
+    .license-info ul li h3 {
+        margin-bottom: 8px;
+    }
+
+    .license-info .w-license01 img {
+        width: 150px;
+    }
+
+    .license-info .w-license02 img {
+        width: 150px;
+    }
+
+    .logo-okvip-footer {
+        background-color: unset;
+        padding: 20px 0px 0px;
+    }
+
+    .company-gt .img-fan_club {
+        border-right: 1px solid #0053e0;
+    }
+
+    .footer-info-top h3,
+    .footer-info-top p {
+        color: #0053e0;
+    }
+
+    .footer-container {
+        margin-top: 0px;
+    }
+
+    .footer-menu.dp-pc {
+        display: none;
+    }
+
+    .paymend-title {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .footer .footer-content {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .footer .footer-column {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .vip-club-gt {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .footer-info-top h3,
+    .footer-info-top p {
+        font-size: 15px;
+    }
+
+    .company-gt .img-fan_club {
+        width: 50px;
+        padding-right: 10px;
+    }
+
+    .company-gt .img-okvip {
+        padding-left: 10px;
+        max-width: 110px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer .footer-column {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .vip-club-gt {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .footer-info-top h3,
+    .footer-info-top p {
+        font-size: 15px;
+    }
+
+    .company-gt .img-fan_club {
+        width: 50px;
+        padding-right: 10px;
+    }
+
+    .company-gt .img-okvip {
+        padding-left: 10px;
+        max-width: 110px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .paymend-menthod a {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media screen and (max-width: 354px) {
+
+    .license-info .list-icon01 h3,
+    .license-info .list-icon02 h3,
+    .license-info .list-icon03 h3,
+    .license-info .list-icon04 h3 {
+        font-size: 11px !important;
+    }
+
+    .footer-info-top h3,
+    .footer-info-top p {
+        font-size: 12px !important;
+    }
+}
